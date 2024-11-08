@@ -1,0 +1,22 @@
+question - https://www.codewars.com/kata/5a9e86705ee396d6be000091/train/python
+
+Given an array with exactly 5 strings "a", "b" or "c" (chars in Java, characters in Fortran, Chars in Haskell), check if the array contains three and two of the same values.
+
+Examples
+["a", "a", "a", "b", "b"] ==> true  // 3x "a" and 2x "b"
+["a", "b", "c", "b", "c"] ==> false // 1x "a", 2x "b" and 2x "c"
+["a", "a", "a", "a", "a"] ==> false // 5x "a"
+
+solution 
+
+def check_three_and_two(array):
+    counter= {}
+    counter3= 0
+    counter2= 0
+    for x in array:
+        counter[x]= array.count(x)
+        if counter[x]==3:
+            counter3 +=1
+        if counter[x]==2:
+            counter2 +=1        
+    return True if counter3 >= 1 and counters2 >= 1 else False
