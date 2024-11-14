@@ -1,0 +1,12 @@
+question - https://www.codewars.com/kata/5552101f47fc5178b1000050/train/python
+
+solution 
+
+def dig_pow(n, p):
+    sum= 0
+    for index, char in enumerate(str(n)):
+        sum += int(char)**(p+index)
+    if sum/n %1 ==0:
+        return sum/n
+    else:
+        return -1
