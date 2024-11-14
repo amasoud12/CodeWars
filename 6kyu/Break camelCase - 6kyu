@@ -1,0 +1,18 @@
+question - https://www.codewars.com/kata/5208f99aee097e6552000148/train/python
+
+Complete the solution so that the function will break up camel casing, using a space between words.
+
+Example
+"camelCasing"  =>  "camel Casing"
+"identifier"   =>  "identifier"
+""             =>  ""
+
+solution 
+
+def solution(s):
+    l= []
+    for char in s:
+        if char.isupper():
+            char= (' '+char)
+        l.append(char)
+    return ''.join(l)
