@@ -1,0 +1,14 @@
+question 
+
+Find the number with the most digits.
+
+If two numbers in the argument array have the same number of digits, return the first one in the array.
+
+solution
+
+def find_longest(arr):
+    n = 0
+    for num in arr:
+        if len(str(num)) > len(str(n)):
+            n = num
+    return n
