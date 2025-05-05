@@ -1,0 +1,14 @@
+question - https://www.codewars.com/kata/57d2807295497e652b000139/train/python
+
+solution 
+
+def averages(arr):
+    average = []
+    
+    if arr is None or len(arr) <= 1:
+        average = []
+    else:
+        for i in range(len(arr) - 1):
+            average.append((arr[i] + arr[i + 1])/2)
+       
+    return average
