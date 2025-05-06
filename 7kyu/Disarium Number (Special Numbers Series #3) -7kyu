@@ -1,0 +1,14 @@
+question - https://www.codewars.com/kata/5a53a17bfd56cb9c14000003/train/python
+
+solution 
+
+def disarium_number(number):
+    total = 0
+    
+    for i, num in enumerate(str(number)):
+        total += int(num)**(i + 1)
+        
+    if total == number:
+        return 'Disarium !!'
+    
+    return 'Not !!'
