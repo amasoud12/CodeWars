@@ -1,0 +1,15 @@
+question - https://www.codewars.com/kata/55d410c492e6ed767000004f/train/python
+
+solution 
+
+def vowel_2_index(string):
+    lst = ['a', 'e', 'i', 'o', 'u']
+    lst2 = []
+    
+    for i, char in enumerate(string):
+        if char.lower() in lst:
+            lst2.append(str(i + 1))
+        else:
+            lst2.append(char)
+    
+    return ''.join(lst2)
