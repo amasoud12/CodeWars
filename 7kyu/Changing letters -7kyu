@@ -1,0 +1,15 @@
+question - https://www.codewars.com/kata/5831c204a31721e2ae000294/train/python
+
+solution
+
+def swap(st):
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    result = []
+    
+    for i in range(len(st)):
+        if st[i] in vowels:
+            result.append(st[i].upper())
+        else:
+            result.append(st[i])
+        
+    return ''.join(result)    
