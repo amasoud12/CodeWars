@@ -1,0 +1,12 @@
+question - https://www.codewars.com/kata/563d59dd8e47a5ed220000ba/train/python
+
+solution 
+
+def get_sum_of_digits(num):
+    total = 0
+    
+    for x in str(num):
+        total += int(x)
+    
+    return total
+        
