@@ -1,0 +1,13 @@
+question - https://www.codewars.com/kata/51c89385ee245d7ddf000001/train/python
+
+solution 
+
+def solution(value):
+    maxLength = 5
+    
+    value = str(value)
+    
+    if len(value) < maxLength:
+        value = value.zfill(maxLength)
+        
+    return 'Value is ' + value
