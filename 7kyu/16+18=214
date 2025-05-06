@@ -1,0 +1,18 @@
+question - https://www.codewars.com/kata/5effa412233ac3002a9e471d/train/python
+
+solution 
+
+def add(num1, num2):
+    total = []
+    num1, num2 = str(num1), str(num2)
+    length1, length2 = len(num1), len(num2)
+    
+    maxLength = max(length1, length2)
+    num1 = num1.zfill(maxLength)
+    num2 = num2.zfill(maxLength)
+    
+    for i in range(max(length1, length2)):
+        total.append(str(int(num1[i]) + int(num2[i])))
+
+        
+    return int(''.join(total))
