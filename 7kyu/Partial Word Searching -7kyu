@@ -1,0 +1,15 @@
+question - https://www.codewars.com/kata/54b81566cd7f51408300022d/train/python
+
+solution
+
+def word_search(query, seq):
+    lst = []
+    
+    for word in seq:
+        if query.lower() in word.lower():
+            lst.append(word)
+    
+    if not lst:
+        return ['None']
+    else:
+        return lst
