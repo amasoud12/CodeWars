@@ -1,0 +1,13 @@
+question - https://www.codewars.com/kata/5168b125faced29f66000005/train/python
+
+solution 
+
+def solution(full_text, search_text):
+    counter = 0
+    strLength = len(search_text)
+    
+    for i in range(len(full_text)):
+        if full_text[i:i+strLength] == search_text:
+            counter += 1
+    
+    return counter
