@@ -6,7 +6,7 @@ def solution(full_text, search_text):
     counter = 0
     strLength = len(search_text)
     
-    for i in range(len(full_text)):
+    for i in range(len(full_text) - strLength + 1):
         if full_text[i:i+strLength] == search_text:
             counter += 1
     
