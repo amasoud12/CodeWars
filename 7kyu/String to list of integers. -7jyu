@@ -1,0 +1,12 @@
+question - https://www.codewars.com/kata/5727868888095bdf5c001d3d/train/python
+
+solution 
+
+def string_to_int_list(s):
+    lst = []
+    
+    for num in s.split(','):
+        if num.lstrip('-').isdigit():
+            lst.append(int(num))
+        
+    return lst
