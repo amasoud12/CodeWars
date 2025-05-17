@@ -1,0 +1,15 @@
+question - https://www.codewars.com/kata/5572392fee5b0180480001ae/train/python
+
+solution 
+
+def computer_to_phone(numbers):
+    lstPhone = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+    lstKeyboard = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0"]
+
+    newNumber = ""
+    
+    for char in numbers:
+        index = lstKeyboard.index(char)
+        newNumber += lstPhone[index]
+        
+    return newNumber
