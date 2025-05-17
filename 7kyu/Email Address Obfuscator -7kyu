@@ -1,0 +1,14 @@
+question - https://www.codewars.com/kata/562d8d4c434582007300004e/train/python
+
+solution 
+
+def obfuscate(email):
+    lst = []
+    for char in email:
+        if char == '@':
+            char = ' [at] '
+        elif char == '.':
+            char = ' [dot] '
+        lst.append(char)
+    
+    return ''.join(lst)
