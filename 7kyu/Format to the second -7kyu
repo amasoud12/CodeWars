@@ -1,0 +1,17 @@
+question - https://www.codewars.com/kata/58311faba317216aad000168/train/python
+
+soltuion 
+
+def print_nums(*args):
+    maxDigits = 0
+    lst = []
+    
+    for num in args:
+        if len(str(num)) > maxDigits:
+            maxDigits = len(str(num))
+    
+    for value in args:
+        lst.append(str(value).zfill(maxDigits))
+
+    
+    return '\n'.join(lst)
