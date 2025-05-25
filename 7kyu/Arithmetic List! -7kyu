@@ -1,0 +1,11 @@
+question - https://www.codewars.com/kata/541da001259d9ca85d000688/train/python
+
+solution
+
+def seqlist(first, c, l):
+    lst = []
+    
+    for i in range(l):
+        lst.append(first + c * i)
+        
+    return lst
