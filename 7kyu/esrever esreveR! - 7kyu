@@ -1,0 +1,15 @@
+question - https://www.codewars.com/kata/57e0206335e198f82b00001d/train/python
+
+solution 
+
+def esrever(st):
+    lst = []
+    st = list(st)
+    
+    for index in range(len(st) - 1):
+        lst.append(st[index])    
+    
+    if len(st) > 0:
+        return ''.join(lst[::-1]) + st[-1]
+    else: 
+        return ''.join(lst[::-1])
