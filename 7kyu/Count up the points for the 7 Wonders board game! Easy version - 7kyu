@@ -1,0 +1,8 @@
+question - https://www.codewars.com/kata/5adadcb36edb07df5600092e/train/python
+
+solution 
+
+def seven_wonders_science(compasses, gears, tablets):
+    total = compasses**2+ gears**2 + tablets**2
+    iteration_count = min(compasses, gears, tablets)
+    return total + iteration_count * 7
