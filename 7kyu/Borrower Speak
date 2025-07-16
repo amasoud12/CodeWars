@@ -1,0 +1,11 @@
+question - https://www.codewars.com/kata/57d2ba8095497e484e00002e/train/python
+
+solution 
+
+def borrow(s):
+    lst = []
+    for char in s:
+        if char.isalpha():
+            lst.append(char.lower())
+            
+    return ''.join(lst)
