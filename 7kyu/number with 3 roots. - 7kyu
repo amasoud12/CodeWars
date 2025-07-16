@@ -1,0 +1,9 @@
+question - https://www.codewars.com/kata/5932c94f6aa4d1d786000028/train/python
+
+solution 
+
+def perfect_roots(n):
+    if n**(1/2) %1 == 0 and n**(1/4) %1 == 0 and n**(1/8) %1 == 0: 
+        return True
+    else: 
+        return False
