@@ -1,0 +1,21 @@
+question - https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/python
+
+solution 
+
+def pig_it(text):
+    text_lst = []
+    punctuation_marks = [
+    ".", ",", "!", "?", ":", ";", "-", "—", "(", ")", "[", "]", "{", "}",
+    "\"", "'", "/", "\\", "@", "#", "$", "%", "&", "*", "^", "_", "~", "|", 
+    "<", ">", "="
+    ]         
+    
+    for word in text.split(' '):
+        if word not in punctuation_marks:
+            for index, char in enumerate(word): 
+                new_word = word[1:]+word[0]+'ay'
+            text_lst.append(new_word)
+        else: 
+            text_lst.append(word)
+                
+    return ' '.join(text_lst)
