@@ -1,0 +1,14 @@
+question - https://www.codewars.com/kata/514a024011ea4fb54200004b/train/python
+
+solution 
+
+def domain_name(url):
+    lst = []
+    not_needed_lst = ['http:', 'https:', 'www']
+    
+    for word in url.split('//'):
+        for item in word.split('.'):
+            if item not in not_needed_lst:
+                lst.append(item)
+        
+    return lst[0]
