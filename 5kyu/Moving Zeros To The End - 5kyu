@@ -1,0 +1,18 @@
+question - https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/python
+
+solution 
+
+def move_zeros(lst):
+    zero_counter = 0
+    new_lst = []
+    
+    for num in lst: 
+        if num == 0: 
+            zero_counter += 1
+        else: 
+            new_lst.append(num)
+            
+    for zero in range(zero_counter):
+        new_lst.append(0)
+    
+    return new_lst
